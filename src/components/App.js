@@ -9,7 +9,7 @@ const App = () => {
 <Tooltip
 text={"This is a Tooltip"}
 >
-   <button style={{border:"none", backgroundColor:"transparent", borderBottom:"1px solid black"}}><h1>Hover over me</h1></button>
+   <h2 style={{border:"none", backgroundColor:"transparent", borderBottom:"1px solid black"}} className="tooltip" >Hover over me</h2>
 </Tooltip>
 
 

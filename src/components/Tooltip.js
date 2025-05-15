@@ -17,12 +17,11 @@ const hide = ()=>{
     return (
        
         <div 
-        className="tooltip"
-        onMouseOver={show1}
+        onMouseEnter={show1}
         onMouseLeave={hide}
         >
-            {show&& <div style={{ position: "absolute", border:"none", textAlign:"center", width:"100px", backgroundColor:"red", margin:"20px ", padding:"10px", borderRadius:"10px", borderInlineStyle:"none"}}><p>{text}</p></div>}
-         <h1>   {children}</h1>
+            {show&& <div  className="tooltip" style={{ position: "absolute", border:"none", textAlign:"center", width:"100px", backgroundColor:"red", margin:"20px ", padding:"10px", borderRadius:"10px", borderInlineStyle:"none"}}><p>{text}</p></div>}
+         {children}
             
         </div>
     )
